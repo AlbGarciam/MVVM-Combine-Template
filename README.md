@@ -1,4 +1,4 @@
-# MVVM-Combine-Template
+# MVVM-Combine
 This is a template for iOS projects. It uses MVVM architecture using state-oriented views and combine.
 
 ## How to use
