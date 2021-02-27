@@ -2,7 +2,7 @@
 This is a template for iOS projects. It uses MVVM architecture using state-oriented views and combine.
 
 ## How to use
-This project contains 2 templates, `BaseComponents` and `Screens`. 
+This project contains 3 templates, `BaseComponents`, `Screens` and `UseCase`. 
 
 **BaseComponents**
 This template creates a `BaseViewModel` and a `BaseMVVMViewController` which will host all the logic of handling the state and the combine configuration
@@ -14,3 +14,11 @@ This template creates the structure of a screen, based on `BaseComponents`. It w
 - **ViewModel**: Subclass of `BaseViewModel`, will host all the logic of the screen
 - **ViewController**: Subclass of `BaseMVVMViewController`, will declare the view and its components
 - **ViewController+Autolayout**: Extension of `ViewController` will declare all the autolayout configuration. `configure()` method will be triggered during `loadView()` method
+
+**UseCase**
+This template creates the structure of a usecase
+
+## How to install
+```bash
+swift run
+```
