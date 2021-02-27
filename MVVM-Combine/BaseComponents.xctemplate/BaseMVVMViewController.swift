@@ -10,7 +10,9 @@ class BaseMVVMViewController<State: Equatable>: UIViewController {
         super.init()
         viewModel.statePublisher
             .receive(on: RunLoop.main)
-            .sink(receiveValue: render(state:))
+            .sink(receiveValue: { [weak self] state in
+                self?.render(state: state)
+            })
             .store(in: &cancellables)
     }
 
